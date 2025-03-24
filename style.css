@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Profile Card */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 140, 255, 0.9);
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, #00c6ff, #0072ff, #ff00ff, #ffcc00);
+    border-image-slice: 1;
+    animation: borderGlow 3s linear infinite;
+}
+
+/* Animate the border color */
+@keyframes borderGlow {
+    0% { border-image-source: linear-gradient(45deg, #00c6ff, #0072ff); }
+    50% { border-image-source: linear-gradient(45deg, #ff00ff, #ffcc00); }
+    100% { border-image-source: linear-gradient(45deg, #00c6ff, #0072ff); }
+}
+
+
+
+/* Profile Image */
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Profile Image Hover Effect */
+.card img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.7);
+}
+
+/* Name Styling */
+.card h2 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Job Title */
+.card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Social Links */
+.social-links a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.social-links a i {
+    font-size: 18px;
+    margin: 5px;
+} 
+/* LinkedIn Button */
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 119, 181, 0.5);
+}
+
+/* GitHub Button */
+.github {
+    background-color: #24292e;
+}
+
+.github:hover {
+    background-color: #1b1f23;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(36, 41, 46, 0.5);
+}
+
+.bio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Skill Set */
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills li {
+    background: #f1f1f1;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Instagram Button */
+.instagram {
+    background-color: #E1306C;
+}
+
+.instagram:hover {
+    background-color: #C13584;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(225, 48, 108, 0.5);
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
